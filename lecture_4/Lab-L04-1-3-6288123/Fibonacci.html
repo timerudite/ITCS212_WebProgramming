@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      console.log("Using while loops");
+      console.log("Fibonacci series less than 40");
+
+      const term = 40;
+      let x = 0;
+      let y = 1;
+      let fibo;
+
+      fibo = x + y;
+      while (fibo <= term) {
+        console.log(fibo);
+        x = y;
+        y = fibo;
+        fibo = x + y;
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

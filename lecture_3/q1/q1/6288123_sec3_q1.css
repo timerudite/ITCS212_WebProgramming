@@ -1,0 +1,101 @@
+/* ----------------------------------------------------------
+    Student ID: 6288123
+    Student Name: Thanaboon Sapmontree
+    Section:  3
+ ------------------------------------------------------------ */
+/* Starts your CSS here */
+
+/* Style of <body> */
+/* All font used in the webpage must be sans-serif */
+* {
+  font-family: sans-serif;
+}
+
+/* Style of <header and footer> */
+header,
+footer {
+  background-color: #2e4053;
+  text-align: center;
+  color: #f8f9f9;
+}
+
+/* Style of <h1> inside <header> */
+header h1 {
+  margin-bottom: 0px;
+  padding: 20px;
+}
+
+/* Style of <p> inside <footer> */
+footer p {
+  padding: 5px;
+}
+
+/* Style of navbar(class) */
+.navbar {
+  background-color: #5d6d7e;
+  margin: 0px;
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.navbar li {
+  padding-top: 14px;
+  padding-right: 20px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #fdfefe;
+}
+
+.navbar li:hover {
+  background-color: #85929e;
+}
+
+/* Style of all article */
+article {
+  width: 80%;
+  margin: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style of all img */
+img {
+  height: 300px;
+  border-radius: 10px;
+}
+
+img:hover {
+  opacity: 0.8;
+}
+
+figcaption {
+  font-style: italic;
+}
+
+a.top {
+  background-color: #d7dbdd;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+a.top:hover {
+  background-color: #48c9b0;
+}

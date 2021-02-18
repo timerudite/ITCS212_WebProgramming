@@ -1,0 +1,48 @@
+<html>
+  <body>
+    <script type="application/javascript">
+      /* ----- Your JS code is here ----- */
+      class Movie {
+        /* Constuctor */
+        constructor(_title, _year) {
+          /* Properties: title and year */
+          this._title = _title;
+          this._year = _year;
+        }
+
+        /* Method */
+        getTitle(_title) {
+          /* Format: "Title: [title]" */
+          return "Title: " + this._title;
+        }
+        getReleasedYear(_year) {
+          /* Format: "Year: [year]" */
+          return "Year: " + this._year;
+        }
+      }
+
+      /* Create two objects of the Movie class
+               Example:
+               let movie1 = new Movie("Harry Potter and the Goblet of Fire", 2005)
+            */
+      let movie1 = new Movie("Harry Potter and the Goblet of Fire", 2005);
+      let movie2 = new Movie("Spiderman: Far From Home", 2019);
+
+      /* Call methods to display the following format in the console
+               Title: [title] released in Year: [year]
+               Example:
+               Title: Harry Potter and the Goblet of Fire released in Year: 2005
+            */
+
+      console.log(
+        movie1.getTitle() + " released in " + movie1.getReleasedYear()
+      );
+
+      console.log(
+        movie2.getTitle() + " released in " + movie2.getReleasedYear()
+      );
+
+      /* ==========  Activity 1 ends here  ========== */
+    </script>
+  </body>
+</html>

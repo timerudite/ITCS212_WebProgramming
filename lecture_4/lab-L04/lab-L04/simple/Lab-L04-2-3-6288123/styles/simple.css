@@ -1,0 +1,58 @@
+body {
+  font-family: arial;
+}
+
+div.headingBlock {
+  color: rgb(20, 20, 200);
+}
+
+#simple {
+  color: red;
+}
+
+input,
+label,
+#doAdd {
+  font-size: 200%;
+}
+
+#doAdd {
+  cursor: pointer;
+}
+
+#doSub {
+  font-size: 200%;
+}
+
+#doSub {
+  cursor: pointer;
+}
+
+div {
+  margin: 2em;
+}
+
+.positive {
+  color: blue;
+}
+
+.negative {
+  color: red;
+}
+
+.even::after {
+  content: " (even)";
+  color: blueviolet;
+}
+
+.odd::after {
+  content: " (odd)";
+  color: seagreen;
+}
+
+img {
+  height: 1em;
+  width: 1em;
+  vertical-align: middle;
+  padding: 10px;
+}

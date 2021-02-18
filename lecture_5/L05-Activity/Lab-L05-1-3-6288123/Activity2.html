@@ -1,0 +1,66 @@
+<html>
+  <body>
+    <script type="application/javascript">
+      class Movie {
+        /* Constuctor */
+        constructor(_title, _year) {
+          /* Properties */
+          this._title = _title; /* title type of string */
+          this._year = _year; /* year type of int */
+        }
+
+        /* Method */
+        getTitle() {
+          return this._title;
+        }
+        getReleasedYear() {
+          return "Year: " + this._year;
+        }
+      }
+
+      /* ----- Your JS code is here ----- */
+      /* Extend the Movie class to create a subclass */
+      class ThaiMovie extends Movie {
+        /* Constructor */
+        constructor(_title, _year, _titleTH) {
+          /* Properties */
+          super(_title, _year);
+          this._titleTH = _titleTH;
+        }
+
+        /* Methods */
+        getFullTitle(_title, _titleTH, _year) {
+          /* Format: [titleTH]([title]) */
+          return (
+            this._titleTH +
+            " (" +
+            super.getTitle(this.title) +
+            ") released in " +
+            super.getReleasedYear(this._year)
+          );
+        }
+      }
+
+      /* Create two objects of the ThaiMovie class 
+               Example:
+               let movie1 = new ThaiMovie("Mr Deu",2019,"มิสเตอร์ดื้อ กันท่าเหรียญทอง");
+            */
+      let movie1 = new ThaiMovie("Bad Genius", 2017, "ฉลาดเกมส์โกง");
+      let movie2 = new ThaiMovie(
+        "Mr Deu",
+        2019,
+        "มิสเตอร์ดื้อ กันท่าเหรียญทอง"
+      );
+
+      /* Call methods to display the following format in the console 
+               [titleTH]([title]) released in Year: [year]
+               Example: 
+               มิสเตอร์ดื้อ กันท่าเหรียญทอง (Mr Deu) released in Year: 2019
+            */
+      console.log(movie1.getFullTitle());
+      console.log(movie2.getFullTitle());
+
+      /* ==========  Activity 2 ends here  ========== */
+    </script>
+  </body>
+</html>
