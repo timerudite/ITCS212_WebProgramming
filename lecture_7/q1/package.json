@@ -1,0 +1,16 @@
+{
+  "name": "q1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "6288123_sec3_q1.js",
+  "scripts": {
+    "start": "nodemon 6288123_sec3_q1.js"
+  },
+  "author": "Thanaboon, Section 3, 6288123",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}

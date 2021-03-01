@@ -2,13 +2,14 @@
   <head>
     <title></title>
     <script type="text/javascript">
-      var n = 0;
-      var x = 0;
-      while (n < 10) {
-        n++;
-        x += n;
+      function findMax(x, y) {
+        if (x > y) {
+          document.write(x);
+        } else {
+          document.write(y);
+        }
       }
-      console.log("n = " + n + ", x = " + x);
+      test(10, 8);
     </script>
   </head>
   <body></body>

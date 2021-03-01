@@ -1,0 +1,2 @@
+test.html:12 Uncaught ReferenceError: test is not defined
+    at test.html:12

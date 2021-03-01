@@ -10,10 +10,10 @@ const myQ1Server = http.createServer((req, res)=> {
     const userPath = req.url;           // Path
 
     /* ------ Your code goes here ------ */
-
     
     if(userPath === "/"){
     // #1:Root: When path is "/", repond with the plain text as “Hello World! in plain text” (status:200)
+        console.log("Req at: /");
         res.statusCode = 200;
         res.setHeader("Content-Type", "text/plain");
         res.write("Hello World! in plain text");
@@ -21,6 +21,7 @@ const myQ1Server = http.createServer((req, res)=> {
     }
     else if(userPath === "/th"){
     // #2:TH Page: When path is "/th", respond with greeting_th.html (status:200)    
+        console.log("Req at: /th");
         fs.readFile("./greeting_th.html", function(err, data){
             res.statusCode = 200;
             res.setHeader("Content-Type", "text/html; charset=utf-8;");
@@ -30,6 +31,7 @@ const myQ1Server = http.createServer((req, res)=> {
     }
     else if(userPath === "/cn"){
     // #3:CN Page: When path is "/cn", respond with greeting_cn.html (status:200)
+        console.log("Req at: /cn");
         fs.readFile("./greeting_cn.html", function(err, data){
             res.statusCode = 200;
             res.setHeader("Content-Type", "text/html; charset=utf-8;");
@@ -39,6 +41,7 @@ const myQ1Server = http.createServer((req, res)=> {
     }
     else{
         // #4:Otherwise, respond the error in the plain text as “Where are you going”? (status:404)
+        console.log("Req at: /SOMEOTHERPATH");
         res.statusCode = 404;
         res.setHeader("Content-Type", "text/plain");
         res.write("Where are you going ?");
